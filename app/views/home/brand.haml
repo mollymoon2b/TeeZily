@@ -1,0 +1,109 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.brand
+  .blocHeader
+    %h1 Our brand
+    %p The guidelines that follow will help you correctly make use of our brand.
+    %a.btn_dl{:download => "Assets_teezily", :href => "brand/Assets_teezily.zip"} Download All Brand Assets
+    %p By using our brand assets, you indicate your acceptance of our Trademark Usage Guidelines and you understand that a violation of these guidelines will result in the termination of your license and/or permission to use our brand assets.
+  .ourLogo
+    %h1.text-left Our Logo
+    %p This is our logo, the one that should always be used. There are two versions to ensure optimum legibility.
+    .ourLogoImg
+      .ourLogoInfo
+        = image_tag("brand/OUR LOGO.png")
+        %h1 Logo
+        %p This is the main Teezily logo. It should be used in this form whenever possible.
+      .ourLogoInfo
+        = image_tag("brand/OUR LOGO2.png")
+        %h1 Inverted logo
+        %p This version with the white wordmark works well on dark and busy backgrounds
+      %a.btn_dl{:download => "Our_logos", :href => "brand/Our_logos.zip"} Download Assets
+  .ourGlyph
+    %h1 Our glyph
+    %p It’s our logo stripped of its wordmark. Use it only when and where space is limited.
+    .ourGlyphImg
+      = image_tag("brand/OUR GLYPH.png")
+      = image_tag("brand/OUR GLYTH3.png")
+    .ourGlyphText
+      %h1 The main logo always come first
+      %p However, in certain situations where space is very tight, for instance when the logo has to be within a square or circle shape, the use of the glyph is allowed.
+      %a.btn_dl{:download => "Our_glyph", :href => "brand/Our_glyph.zip"} Download Assets
+  .ourColors
+    %h1 Our color
+    %p We mainly use one color, Teezily Blue.
+    .ourColorsImg
+      = image_tag("brand/OUR COLOR.png")
+  .monotoneLogos
+    %h1 Monotone logos
+    %p We love our main logo, so that should always be used if possible. These can be used as a substitute, only when absolutely necessary.
+    .ourLogoInfo
+      = image_tag("brand/MONOTONE.png")
+      %h1 Monotone black
+    .ourLogoInfo
+      = image_tag("brand/MONOTONE2.png")
+      %h1 Monotone white
+    %a.btn_dl{:download => "Monotone", :href => "brand/Monotone.zip"} Download Assets
+  .spacingRules
+    %h1 Spacing rules
+    %p Our logo works best when it has enough room to breathe. Follow these simple rules to make sure it’s shown in its best light.
+    .ourLogoInfo
+      = image_tag("brand/SPACING.png")
+      %h1 Logo spacing
+      %p For this one to show its full potential, leave at least one glyph worth of space around it.
+    .ourLogoInfo
+      = image_tag("brand/SPACING2.png")
+      %h1 Glyph spacing
+      %p It’s best to have at least one glyph at 25% the size around it.
+  .minimumSize
+    %h1 Minimum size
+    %p Preserving legibility in both print and digital formats is crucial.
+    .ourLogoInfo
+      = image_tag("brand/MINIMUM SIZE.png")
+      %h1 Digital
+      %p Our logo shouldn’t be smaller than 100px in width.
+    .ourLogoInfo
+      = image_tag("brand/MINIMUM SIZE 2.png")
+      %h1 Print
+      %p Printed, our logo shouldn’t be smaller than 1.9 cm in width.
+  .bestPractices
+    %h1 Best practices
+    %p Here’s a few examples of what we should absolutely avoid when using the logo.
+    .ourLogoBestUse
+      = image_tag("brand/logoteezily.png")
+      %p Don’t use the old logo
+    .ourLogoBestUse
+      = image_tag("brand/logoteezily2.png")
+      %p Don’t use the wordmark alone
+    .ourLogoBestUse
+      = image_tag("brand/logoteezily3.png")
+      %p Don't stretch or squeeze it
+    .ourLogoBestUse
+      = image_tag("brand/logoteezily4.png")
+      %p Don’t rotate it
+    .ourLogoBestUse
+      = image_tag("brand/logoteezily5.png")
+      %p Don’t use busy backgrounds
+    .ourLogoBestUse
+      = image_tag("brand/logoteezily6.png")
+      %p Don’t use against low-contrast
+    .ourLogoBestUse
+      = image_tag("brand/logoteezily7.png")
+      %p Don’t use gradients or shadows
+    .ourLogoBestUse
+      = image_tag("brand/logoteezily8.png")
+      %p Don’t stack the logo
+    .ourLogoBestUse
+      = image_tag("brand/logoteezily9.png")
+      %p Don’t create your own version
+
+
+
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

@@ -1,0 +1,42 @@
+.press {	
+	a {
+		color: #000000;
+		font-size: 18px;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	.years {
+		padding-bottom: 38px;
+	}
+	.hashtag {	
+		color: $teezilyGray;
+		font-size: 12px;
+	}
+	.titrePress{
+		padding:60px;
+	}
+	.article {
+		padding: 20px;
+		margin : 0 auto;
+		width: 740px;
+	}
+
+	.imgArticle,  .textArticle {
+		.first_img {		
+			padding: 20px;
+		}
+		img {
+			width: 400px;
+		}
+	}	
+		
+	.textArticle {
+		padding-bottom: 22px;
+		border-bottom: 2px $teezilyLightGray solid;
+	}		
+	.last {		
+		padding-bottom: 50px;
+		border-bottom: 2px white solid;
+	}		
+}

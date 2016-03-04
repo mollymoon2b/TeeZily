@@ -1,0 +1,24 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress
+  .titleArticle
+    %h1 Care Amiche oggi voglio parlarvi di una collaborazione splendida con Teezil.
+    %p By universofemminiledisarah, Jan 30, 2015
+  .article	
+    %p Con Teezily decidi tu cosa indossare e cosa far indossare ! Come funziona  ?
+    %p Scegli un prodotto e crea il tuo disegno grazie a Teezilab, lo strumento di personalizzazione del brand. Carica un file o un’immagine, o crea il tuo profilo virtuale grazie alle molteplici funzionalità di Teezily. E se non sai bene come fare basta metterti in contatto con loro e ti aiuteranno !
+    %p A questo punto definisci un obiettivo di vendite da raggiungere, fissa un prezzo per il tuo prodotto e il guadagno che desideri ricavarne ad ogni acquisto realizzato. Inventa un titolo per la tua campagna e un messaggio da condividere con la tua community. Oltre alla spedizione classica, puoi anche chiedere che tutti i prodotti siano spediti allo stesso indirizzo (opzione gratuita).
+    %p Teezily creerà per te una URL unica che ti permette di condividere la tua campagna per e-mail e su tutti i social network. A questo punto potrai condividere sui social la tua creazione e mobilitare la tua community per raggiungere il tuo obiettivo ed aumentare le vendite.
+    %p Non appena la tua campagna avrà raggiunto l’obiettivo di vendite, sarà Teezily ad occuparsi del resto. I prodotti sono stampati in Francia ed inviati all’indirizzo degli acquirenti entro 10-15 giorni dalla fine della campagna.Se la campagna non dovesse raggiungere l’obiettivo prefissato, i pre-ordini non saranno addebitati e nessun prodotto sarà spedito.
+    %p Teezily ti trasferisce la totalità dei guadagni raccolti. Nel caso abbiate raccolto dei fondi per un terzo, Teezily si impegna a consegnarli al beneficiario indicato entro 5 giorni lavorativi.
+    %p Io non ho partecipato alla campagna quindi non posso darvi una mia opinione in merito ma l’azienda mi ha gentilissimamente ( si può dire???) inviato una maglietta e una felpa e mi ha mostrato come funziona la fase della creazione con i grafici che sono veramente molto bravi e sono venuti incontro a tutte le mie esigenze !
+    %p Una maglietta ed una felpa con una bellissima scritta e sotto il nome del mio blog. Angelica, la ragazza che mi ha seguito durante tutta la creazione è stata assolutamente splendida e il risultato mi piace moltissimo !
+    %p La felpa è un po’ grande per me ma perfetta per l’inverno ! Il cotone è morbidissimo e le scritte sono rimaste perfette anche dopo diversi lavaggi. La mia preferita però è la maglietta i colori che ho scelto risaltano perfettamente sul nero insomma la adoro !!!
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

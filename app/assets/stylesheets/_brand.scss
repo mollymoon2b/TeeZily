@@ -1,0 +1,87 @@
+.brand {
+	.blocHeader, .ourLogo, .ourGlyph, .monotoneLogos, .ourColors, .spacingRules, .minimumSize, .bestPractices {
+		margin: 0 auto;
+		width: 1000px;
+		border-bottom: 2px solid $teezilyLightGray;
+		p, h1 {
+			padding-bottom: 20px;
+		}
+	}
+
+	.ourLogoImg div, .monotoneLogos div, .spacingRules div, .minimumSize div {
+		padding-right: 20px;
+	}
+
+	.btn_dl {
+		background-color: #55B9E9;
+		padding: 10px;
+		border-radius: 5px;
+		color: white;
+	}
+
+	.blocHeader{
+		padding: 10px;
+		text-align: center;
+		p {
+			padding: 30px 0px 30px 0px;
+		}
+	}
+
+	.ourLogo {
+		height: 640px;
+	}
+
+	.ourGlyph {
+		height: 422px;
+		.ourGlyphImg {
+			width: 50%;
+			img {
+				width: 50%;
+				padding: 20px 20px 20px 0px;
+				float: left;
+			}
+		}
+		.ourGlyphText{
+			padding: 35px;
+		}
+	}
+
+	.ourColors {
+		height: 412px;
+		img{
+			width: 100%;
+		}
+	}
+
+	.spacingRules {
+		height: 600px;
+	}
+
+	.monotoneLogos{
+		height: 565px;
+	}
+
+	.minimumSize  {
+		height: 565px;
+	}
+
+	.bestPractices {
+		height: 900px;
+		border-bottom: 2px solid white !important;
+		.ourLogoBestUse {
+			padding: 5px 33px 0px 0px;
+			float: left;
+			img {
+				width: 300px;
+			}
+		}
+	}
+
+	.ourLogoInfo {
+		width: 50%;
+		float: left;
+		img {
+			width: 100%;
+		}
+	}	
+}

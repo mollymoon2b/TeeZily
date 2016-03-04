@@ -1,0 +1,29 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress
+  .titleArticle
+    %h1 Teezily, la revolución de las camisetas online
+    %p  Oct 09, 2014
+  .article
+    %p La primera plataforma en español para crear y vender camisetas diseñadas por ti mismo
+    %p Una nueva forma de marketing social con la que diseñadores gráficos dan a conocer sus trabajos, asociaciones y ONG recaudan fondos para fines benéficos y particulares obtienen unos ingresos extra
+    %p Todo empezó en la Universidad de Brown en 2011, cuando dos estudiantes de último año decidieron crear camisetas contra el cierre de uno de los bares predilectos entre sus compañeros de facultad. Las peticiones les llovieron a cientos pero al pedir presupuesto en el negocio local de impresión de camisetas constataron que no podían permitirse la inversión inicial que requería estampar varias docenas de unidades y que, además, era imposible calcular cuántas acabarían necesitando realmente y de qué tallas.
+    %p De ahí surgió la idea de una web, los orígenes de lo que acabaría siendo Teespring, donde se proponían diseños de camisetas que solo se acababan imprimiendo si se alcanzaba un número determinado de pedidos. El site, que es ahora toda una revolución en Estados Unidos, ha servido de inspiración a los que, siguiendo sus pasos, han apostado por un modelo basado en el crowdfunding y la impresión bajo demanda donde la camiseta o remera es la protagonista absoluta.
+    %p Teezily, que acaba de aterrizar en nuestro país, es la primera web en español que facilita el proceso de diseñar y vender camisetas online inéditas y exclusivas siguiendo este modelo de crowdfunding. Prendas customizadas por diseñadores -profesionales o no- que pueden volverse virales en las redes sociales. Siempre que se cumpla el objetivo de ventas, el creador de la campaña obtendrá sus beneficios, que podrá donar a una ONG o colectivo si el objetivo era recaudar fondos para una buena causa.
+    %p.title Cómo funciona
+    %p Al entrar en su web y hacer clic sobre 'Lanzar una campaña', se entra un simulador desde donde se elige el modelo y color de la prenda y se insertan los dibujos, logos o eslóganes. Las posibilidades son infinitas: camisetas y sudaderas para financiar un proyecto, que hagan un guiño a uno de los trending topics o memes del momento, que exalten un hobbie o una pasión o simplemente que hagan reír a quienes la miren.
+    %p Una vez listo el diseño, se elige el objetivo de ventas, los beneficios que se quieren obtener y el periodo de tiempo que se desea que permanezca activa la venta. Ya solo queda lanzar la campaña y compartirla a través de las redes sociales para llegar al público adecuado.
+    %p Tal y como ocurre en páginas de crowdfunding como Kickstarter, Indiegogo o la española Verkami, el producto solo se lleva a cabo si se alcanza ese objetivo mínimo. La diferencia aquí es que todo corre a cargo de la empresa, que se encarga de la impresión y envío de los productos a cada uno de los compradores, así como de la posterior atención al cliente.
+    %p El usuario se olvida de la inversión inicial, de acumular stock y de los costes de envío. No adelanta nada y no arriesga, solo recauda los beneficios que, a juzgar por lo que aseguran expertos en la materia como Travis Petelle o Ed Teehispano, pueden superar las cinco cifras mensuales si te empleas a fondo.
+    %p Aunque indudablemente los expertos en marketing online o social media y los creativos pueden sacarle un enorme partido a la herramienta, Teezily es para todos: “Pretende eliminar las barreras para que cualquier persona pueda hacer sus ideas realidad y tomar parte en la evolución del ecommerce”, dice Charles Dilasser, su cofundador y CEO.
+    %p Él opina que estamos viviendo el comienzo de la revolución del comercio electrónico, cuando el vendedor tiene en sus manos "una de las herramientas más importantes para la venta online": las redes sociales, pues la campaña de marketing a través del social media y en especial de Facebook es esencial para el éxito de la misma.
+    %p Y desde la incubadora de una de las más reputadas escuelas de negocios de Francia, donde trabaja mano a mano con su equipo internacional de jóvenes emprendedores (ninguno supera los 28 años), nos confiesa que desde principios de enero han conseguido que usuarios de toda Europa lancen más de 30.000 campañas desde su web y que su ritmo de crecimiento es de un 30% todas las semanas desde hace algunos meses.
+    %p.title ¿Quién diría que esa prenda de ropa interior que usaban los soldados del medievo bajo la armadura y que tardó varios siglos en lucirse sin complejos, jugaría, quinientos años después, su papel en el futuro del ecommerce?
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

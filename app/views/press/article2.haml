@@ -1,0 +1,24 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress
+  .titleArticle
+    %h1  Französisches Startup nach US-Vorbild kommt nach Deutschland
+    %p  By Elisabeth Neuhaus, Jun 03 2014
+  .article
+    %p Kurznachricht. Im Rahmen von Online-Kampagnen können Teezily-Nutzer individuell gestaltete T-Shirts verkaufen. Mitte Juni soll die Website in deutscher Sprache starten.
+    %p.title T-Shirt-Versand Teezily nach US-Vorbild
+    %p Der französische Textilbedrucker Teezily expandiert: Nachdem das Startup in Frankreich und Großbritannien in den europäischen Markt eingestiegen ist, will die Plattform noch im Juni auch in Deutschland Fuß fassen.
+    %p Mit Teezily lassen sich T-Shirts gestalten und vermarkten. Damit erinnert das Konzept zunächst an das Angebot von Spreadshirt. Anders als beim Leipziger Startup startet die Produktion über Teezily aber erst, wenn sich genügend Käufer für die personalisierten Textilien finden.
+    %p Teezily selbst versteht sich als europäische Version von Teespring. Das US-amerikanische Vorbild konnte erst kürzlich zwei Millionen US-Dollar von der VC-Firma Andreessen Horowitz einsammeln.
+    %p Werben mit Posts und Tweets
+    %p Wer auf Teezily mit der selbstentworfenen T-Shirt-Kollektion erfolgreich sein will, muss in sozialen Netzwerken für die eigene Idee werben. Angehende Textilschöpfer legen zunächst Verkaufsziele fest und launchen dann individuelle Kampagnen, die sie über Facebook, Twitter und Co. verbreiten können.
+    %p Wenn das Projekt die im Voraus abgesteckten Ziele nicht erreicht und etwa zu wenige Bestellungen eingehen, wird das Shirt nicht produziert. Ist die Kampagne dagegen erfolgreich, verdient der Designer an den Erlösen des Verkaufs.
+    %p Teezily wurde im Januar dieses Jahres von den Franzosen Charles Dilasser (CEO), Enzo Finidori (CTO), Maxime Dumez (CTO), Louis Ravel (CMO) und Maëva Marchais (COO) in Paris gegründet.
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

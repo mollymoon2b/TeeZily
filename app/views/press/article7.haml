@@ -1,0 +1,17 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress
+  .titleArticle
+    %h1  5 French startups to look out for in 2015 
+    %p By Thomas Ohr, Jan 19, 2015
+  .article  
+  .article	
+    %p  Teezily: A fast growing crowdfunding platform for custom apparel based in Paris.  Teezily provides a platform that allows individuals to create campaigns in order to sell custom products. Campaign creators are expected to design and market the product themselves leveraging social media to make money. Teezily will fulfill orders on campaigns that have reached their sales goal and will ship item to buyers. Launched in January 2014, the company reported in June a 600% month-over-month growth rate. Teezily is already available in 7 languages.
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

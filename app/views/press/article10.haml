@@ -1,0 +1,27 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress	
+  .titleArticle
+    %h1 Teezily: la web que está revolucionando el mundo de las camisetas y el marketing digital
+    %p May 26, 2015 
+  .article	
+    %p Llega a nuestro país una nueva startup francesa que aúna por primera vez Social Media y Diseño. Una plataforma online intuitiva e innovadora que permite a los usuarios crear y vender sus propios diseños sin invertir un solo céntimo.
+    %p Teezily nació en París hace poco más de un año y gracias a la ambición de sus tres jóvenes creadores y al trabajo de su equipo internacional ha ido creciendo a un ritmo inimaginable. Se trata de una nueva forma de ver la vida a través de su producto estrella: las camisetas, que son las grandes protagonistas de esta plataforma online. Un modelo de negocio único y original que sorprende a todos sus usuarios. Sin costes. Sin stock. Sin gestión. Una startup que ofrece beneficios en diversos ámbitos: recaudar fondos para ONGs, nuevos diseñadores que den a conocer sus productos, particulares que quieran ganar un sueldo extra…etc.
+    %p.title ¿Cómo funciona? Todo es muy sencillo.
+    %p El usuario de la plataforma tan solo tiene que subir un diseño original, divertido, llamativo, o simplemente utilizar la Teezilab, la herramienta que ofrece Teezily en su simulador con diferentes tipografías, para crear un slogan potente. A partir de ahí, el usuario puede elegir entre un sinfín de colores y modelos, definir un precio de venta de sus productos y con la URL que genera el sistema, ¡empieza la DIVERSIÓN!
+    %p El cliente tiene dos opciones según los objetivos que quiera conseguir:
+    %p.title 1. Invertir en Facebook Ads (Anuncios pagados de Facebook), elegir un buen nicho y hacer una buena segmentación de mercado eligiendo bien los intereses afines.
+    %p Esta es la mejor opción para diseñadores gráficos y particulares a quienes les apasione las Redes Sociales y el Marketing Digital. Y por supuesto la mejor manera de empezar a ganar dinero. Y es por supuesto la mejor manera de empezar a ganar dinero con Teezily, además de ser muy instructivo y motivador, pues poco a poco vas aprendiendo los entresijos que tiene el SEM, sus novedades y sus sorprendentes usos dentro de Facebook. Teezily además ofrece varias herramientas de Marketing para que sea aún más fácil analizar los datos: Retargetting, Conversión de Píxel, Tracking Personalizado y Google Analytics.
+    %p.title 2. Publicar en Redes Sociales: Muro de Facebook, páginas asociadas a cada perfil, Twitter, Pinterest, Whatssap…
+    %p Esta opción es más recomendable para ONGs, asociaciones y/o clubes que tengan un gran número de seguidores, un blog asociado o una página web dónde colgar el link que lleva directamente a la compra.
+    %p Nunca antes ser empresario ha sido tan divertido. Sin duda alguna, ¡Teezily dará qué hablar!
+    %p Conóceles a través de:   www.teezily.com   www.facebook.com/teezily
+
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

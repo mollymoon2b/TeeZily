@@ -1,0 +1,28 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress
+  .titleArticle
+    %h1  Teezily | Gana dinero vendiendo camisetas
+    %p  Oct 09, 2014
+  .article
+    %p ¡Hola a todos! Quiero recomendaros mi último descubrimiento: una nueva forma de ganar dinero por Internet… ¡vender camisetas diseñadas por ti mismo! Cuando esta empresa me contactó, estuve investigando sobre el funcionamiento y me parece realmente interesante.
+    %p Se trata de nueva forma de marketing social con la que diseñadores dan a conocer sus diseños y consiguen más pedidos, asociaciones y ONG recaudan fondos para fines benéficos sin necesidad de recaudar fondos previos y cualquiera como tú consigue ingresos extras
+    %p Hay una plataforma gratuita e innovadora que te lo pone muy fácil. Se llama Teezily y permite al usuario diseñar una camiseta en solo tres clics para hacer con ella su propia campaña de marketing que tendrá que promocionar a través de las redes sociales. Como en el crowdfunding, tendrá que conseguir vender todas las camisetas de la campaña para obtener los beneficios.
+    %p Este modelo de negocio, que en España está empezando ahora, está teniendo muchísimo éxito en Estados Unidos desde hace un par de años. Hay usuarios que llegan a embolsarse miles de euros al mes con este método ¡sin necesidad de invertir nada!.
+    %p El funcionamiento de la web de Teezily es muy sencillo y no hay que invertir ni un euro, pero si quieres que tus campañas funcionen realmente bien y obtener ganancias importantes, tendrás que ponerte las pilas con Facebook o Twitter Ads (u otra plataforma de publicidad, sé creativo!), que es la mejor herramienta para publicitar tus camisetas personalizadas. 
+    %p Si no tenéis ni idea, no os preocupéis, los de Teezily han editado unos cursos realmente útiles donde explican paso a paso cómo buscar un diseño que pueda triunfar, cómo saber cuál es tu público, cómo hacer anuncios de Facebook y, en definitiva, todo lo que necesitas saber para empezar a ganar dinero. Puedes pedirlos aquí, también son gratis.
+    %p.title En resumen:
+    %p Diseña el diseño de tu camiseta a través de Teelizy o deja que te la diseñe un experto
+    %p Fija tus objetivos (número total de camisetas a vender) y te dirán cúanto costará cada camiseta.
+    %p Añade tu margen de beneficio
+    %p Vende las camisetas donde quieras
+    %p ¡Gana dinero! Si consigues cumplir tus objetivos, ganarás el beneficio. Si no lo consigues, ¡tranquilo! no pagas nada, simplemente las camisetas no se enviará y no se cobrará por ello.
+    %p Aprovecha esas cuentas de Twitter de frases, esas fanpages de Facebook con un público leal, esos canales de Youtube con miles de reproducciones...
+    %p Os animo a probarlo y a que me contéis qué tal se os da. Y guardar un poquito de dinero para comprar la camiseta del foro :P
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

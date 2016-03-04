@@ -1,0 +1,25 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress	
+  .titleArticle
+    %h1 Teezily: el negocio de las camisetas que está conquistando europa 
+    %p Jun 01, 2015 
+  .article	
+    %p Llega a nuestro país una nueva startup francesa que aúna por primera vez Social Media y Diseño. Una plataforma online intuitiva e innovadora que permite a los usuarios crear y vender sus propios diseños sin invertir un solo céntimo.
+    %p Nacida como startup en París hace tan solo un año, Teezily ha revolucionado el mundo del e-commerce aprovechando la unión del enorme poder del Crowdfunding y del Social Media para crear y vender camisetas on-line. Tres son los factores clave du su éxito: Una plataforma intuitiva, un uso eficaz de las redes sociales y los instrumentos de Marketing que ofrece Facebook.
+    %p Se trata de una plataforma online, gratuita y disponible en varios idiomas, que no está pensada exclusivamente para profesionales: gracias a Teezily, culquiera es capaz de crear y vender productos personalizados para recaudar fondos para una causa o simplemente para ganar dinero sin coste inicial de producción, logística, envío y atención al cliente, y sobretodo sin ningún riesgo financiero.
+    %p.title “Teezily tiene como objetivo romper las barreras para que todo el mundo pueda dar vida a sus ideas y participar en el desarrollo de del comercio por internet”
+    %p.title “El punto fuerte de Teezily es la total ausencia de riesgo en el uso de nuestra plataforma, que satisface las exigencias de un grupo muy diverso de actores: Marketers, asociaciones, diseñadores, páginas de Facebook...” Charles Dilasser, co-fundador & CEO.
+    %p Seis pasos, intuitivos e inmediatos permiten lanzar una campaña de éxito: “busca” para descubrir los hábitos y las caraterísticas del mercado con ayuda de nuestro grupo de Facebook Universidad Teezily, “define” un nicho de mercado, “verifica” que tu público objetivo sea fácilmente alcanzable a través de Facebook Ads, “crea” un diseño y/ o un slogan, “lanza” tu campaña y finalmente “dírigete” a tu público a través de Facebook Ads.
+    %p En cada fase Teezily ofrece un servicio gratuito para que las campañas sean un éxito, tanto desde el punto de visto creativo donde ofrecemos ayuda gratuita, pasando por traducciones en 9 idiomas diferentes así como ayuda en el desarrollo de los anuncios de Facebook (segmentación, ROI, etc...)
+    %p Una vez que la campaña ha logrado su objetivo mínimo, Teezily se encarga de producir las camisetas y enviarlas a los clientes por toda Europa. En caso que no llegue a objetivo, no supondrá ningún coste para el usuario de la plataforma.
+    %p En España nos encontramos en pleno posicionamiento y poco a poco un mayor número de usuarios se atreven a lanzar su propia campaña y beneficiarse de todas las ventajas que ofrece Teezily. En 2014 Teezily consiguió crear y vender más de 500.000 productos y para este 2015 se espera un crecimiento mucho mayor.
+
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

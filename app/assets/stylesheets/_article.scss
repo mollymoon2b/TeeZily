@@ -1,0 +1,18 @@
+.articlePress {
+	.titleArticle, .article {
+		padding: 20px 20px 50px 20px;
+		margin : 0 auto;
+		width: 600px;
+		h1 {
+			border-bottom: 2px solid $teezilyLightGray;
+			padding: 60px 0px 30px 0px;
+		}
+		p {
+			padding: 10px 10px 10px 10px;
+			font-weight: 300;
+		}
+		.title {
+			font-size: 25px;
+		}
+	}
+}

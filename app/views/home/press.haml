@@ -1,0 +1,77 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+	
+%section.press		
+  .titrePress		
+    %h1.text-center Press Releases
+  .article	
+    %h1.years 2016
+    .textArticle   
+      = link_to ' Teezily, the European Crowdfunding Platform, Expands to Australia and New Zealand', '/press/article16'
+      %p.text-left.hashtag Feb 11, 2016
+  .article
+    .textArticle   
+      = link_to ' French t-shirt crowdfunding platform Teezily expands to Australia and New Zealand', '/press/article15'
+      %p.text-left.hashtag Feb 08, 2016
+  .article  
+    %h1.years 2015
+    .textArticle   
+      = link_to ' Teezily for E-commerce: How to Build Your Own Brand through the New Teezily Plus App ', '/press/article14'
+      %p.text-left.hashtag Nov 19, 2015
+  .article
+    .textArticle   
+      = link_to 'Gratis marketing en online ambassadeurs: Succesverhaal van Teezily', '/press/article13'
+      %p.text-left.hashtag Oct 06, 2015 
+  .article
+    .textArticle   
+      = link_to " Teezily: il business delle t-shirt conquista l'Europa ", '/press/article12'
+      %p.text-left.hashtag Jun 01, 2015 
+  .article
+    .textArticle   
+      = link_to " Teezily: el negocio de las camisetas que está conquistando europa ", '/press/article11'
+      %p.text-left.hashtag Jun 01, 2015 
+  .article
+    .textArticle   
+      = link_to " Teezily: la web que está revolucionando el mundo de las camisetas y el marketing digital ", '/press/article10'
+      %p.text-left.hashtag May 26, 2015 
+  .article
+    .textArticle   
+      = link_to " La monétisation par Teezily, la nouvelle start-up à la mode. ", '/press/article9'
+      %p.text-left.hashtag May 19, 2015
+  .article
+    .textArticle   
+      = link_to " Care Amiche oggi voglio parlarvi di una collaborazione splendida con Teezily . ", '/press/article8'
+      %p.text-left.hashtag Jan 30, 2015
+  .article
+    .textArticle   
+      = link_to " 5 French startups to look out for in 2015 ", '/press/article7'
+      %p.text-left.hashtag Jan 19, 2015
+  .article  
+    %h1.years 2014
+    .textArticle   
+      = link_to " TeeZily - Vende los diseños de tus camisetas fácilmente por medio de campañas", '/press/article6'
+      %p.text-left.hashtag Nov 03, 2014
+  .article
+    .textArticle   
+      = link_to " Teezily | Gana dinero vendiendo camisetas", '/press/article5'
+      %p.text-left.hashtag Oct 09, 2014
+  .article
+    .textArticle   
+      = link_to " Teezily, la revolución de las camisetas online", '/press/article4'
+      %p.text-left.hashtag Sep 23, 2014
+  .article
+    .textArticle   
+      = link_to "  Hoe kan jij je eigen T-shirt business opzetten? Met Teezily natuurlijk!", '/press/article3'
+      %p.text-left.hashtag Sep 17, 2014
+  .article
+    .textArticle.last  
+      = link_to " Französisches Startup nach US-Vorbild kommt nach Deutschland", '/press/article2'
+      %p.text-left.hashtag Jun 03, 2014
+
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

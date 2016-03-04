@@ -1,0 +1,28 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress
+  .titleArticle
+    %h1 TeeZily - Vende los diseños de tus camisetas fácilmente por medio de campañas
+    %p Nov 03, 2014
+  .article
+    %p Teezily es una web con la que podrás crear tus propios diseños de camisetas y venderlas en la red.
+    %p Se podría decir que es una tienda muy parecida a SpreadShit o La Tostadora, pero tiene una sustancial diferencia. La venta de tu diseño se hace por medio de campañas que tienen un objetivo mínimo y un tiempo limitado.
+    %p Solo se venderán las camisetas si se llega a ese objetivo mínimo de pedidos. Un concepto muy parecido a un crowfunging camiseter. 
+    %p Por tanto, olvídate de las tiendas clásicas donde tu camiseta comparte rincón con otros diseños. Cada camiseta en Teezily tendrá si propia campaña, que podrá añadirse a otras creaciones tuyas, pero siempre dentro de una misma campaña y los mismos objetivos.
+    %p.title ¿Como creo campañas en Teezily?
+    %p Lo primero que debes hacer es registrarte en Teezily con unos pocos datos por tu parte.
+    %p Pulsas el botón "Lanzar Campaña", Aparecerá el creador y diseñador de productos en el que podrás insertar mensajes, cambiar los colores de la camistea, así como añadir imágenes a tu diseño (mejor imágenes en HD o vectoriales, así no perderás resolución).
+    %p Ahora toca seleccionar el número de unidades mínimo de la campaña. el valor monetario que tu ganarás por camiseta (podrás ver el dinero total que sacarás si se cumplen los objetivos de la campaña).
+    %p También podrás añadir algún producto mas con el mismo diseño si ese es tu deseo. Ponle nombre a tu campaña, así como una bonita y llamativa descripción. Selecciona el tiempo de la campaña. El máximo son 20 días. Una opción que me ha llamado mucho la atención y que vendrá genial a la hora de promocionar el enlace, es la posibilidad de personalizar la URL de la campaña. Ahora ya solo queda promocionar y esperar a cumplir el objetivo de la campaña para sacar algún dinerillo.
+    %p.title ¿Cuanto dinero puedo ganar con TeeZily?
+    %p Lógicamente las ganancias que tengas en TeeZily vienen dadas por lo exitosas que sean o no tus campañas. A mas campañas cumplidas meyores beneficios tendrás.
+    La forma de pago es por media de transferencia bancaria y cuenta de PayPal. 
+
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

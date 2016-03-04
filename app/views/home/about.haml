@@ -1,0 +1,68 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+  %section.about
+    %header
+      .divTitle
+        .titleAbout
+          %h1.text-center Press & Media
+          %p.text-center The latest news, updates and resources on Shopify
+      .blocIntro
+        .titleBloc
+          %h1 About Teezily
+        %p At Teezily we are proud to call ourselves pioneers of new innovative ways for groups, charities and individuals to raise money for their own causes through the sale of personalised clothing on our user-friendly, 100% free platform. We allow people's designs, visions and projects to come to life through their unique creations that connect diverse groups with a message or image that they can identify with and respond to. Since its inception in early 2014, Teezily has been commited to providing a hassle-free way for dreams to become reality. With no upfront costs and no risk, Teezily uses the leverage of social media to create successful campaigns through crowdfunding.
+      .blocBlue
+        .blocKeyFacts
+          .titleBloc
+            %h1 Key Facts
+          .keyFacts
+            .caseKeyFacts
+              %p.title Teezily Platform Released
+              %h1.number Jan 2014
+            .caseKeyFacts
+              %p.title Teezily Plus Released
+              %h1.number Sep 2015
+            .caseKeyFacts
+              %p.title Worldwide shipping
+              %h1.number Sep 2015
+            .caseKeyFacts
+              %p.title Shipping in
+              %h1.number 180 countries
+            .caseKeyFacts
+              %p.title Average turnaround time
+              %h1.number 5 days
+            .caseKeyFacts
+              %p.title Languages
+              %h1.number 12
+            .caseKeyFacts
+              %p.title Employees
+              %h1.number 50
+            .caseKeyFacts
+              %p.title Printing fulfillment centers
+              %h1.number 3 (US, Europe, Australia)
+      .blocOffice
+        %h1 Teezily Office
+        %p Paris, France
+        = image_tag("about/BUREAU.JPG")
+        = image_tag("about/BUREAU2.JPG")
+        = image_tag("about/BUREAU3.JPG")
+        = image_tag("about/BUREAU4.JPG") 
+      .blocContact
+        %h1 Looking for more?
+        .adresseMail
+          .adressContact
+            %i{ :class => "fa  fa-envelope-o  fa-4x  blue"}
+          .adressContact.textAdress
+            %p press@teezily.com
+        .adresseMail
+          .adressContact
+            %i{ :class => "fa fa-phone fa-4x blue"}
+          .adressContact.textAdress
+            %p 01.23.45.67.89 
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

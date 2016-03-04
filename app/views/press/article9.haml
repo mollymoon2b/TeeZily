@@ -1,0 +1,26 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress
+  .titleArticle
+    %h1 La monétisation par Teezily, la nouvelle start-up à la mode. 
+    %p  May 19, 2015
+  .article	
+    %p Teezily est la nouvelle start-up à la mode pour permettre au plus grand nombre de concevoir et de vendre des t-shirts personnalisés le but étant de collecter ou de gagner de l’argent efficacement.
+    %p Teezily est la nouvelle start-up qui permet de dégager des fonds auprès de son audience.
+    %p Le concept est simple et répond à deux besoins innovants : récolter des fonds pour une cause (association, événements culturels, sportifs…) ou effectuer une monétisation de son audience grâce à la vente de t-shirt personnalisé.
+    %p Teezily est un service en ligne gratuit qui propose de trouver des fonds sans prendre de risques financiers et sans se soucier de la logistique, le groupe s’occupe de la fabrication des produits, l’enregistrement des commandes, des envois…
+    %p Pour cela, le site en ligne propose un éditeur simple et accessible à tous, il s’agit d’un éditeur en ligne basique qui propose de choisir tout d’abord le type de t-shirt souhaité, deux choix sont proposés : le maillot simple accessible pour homme ou femme, et le modèle sweater.
+    %p La deuxième étape consiste à choisir l’image pour habiller le t-shirt en question, pour cela, rien de plus simple, il suffit de choisir une image de sa collection personnelle ou de saisir quelques mots.
+    %p Pour finir, les derniers ajustements nécessitent de coordonner l’ensemble, d’ajuster l’image, la taille des caractères, le texte …
+    %p Vient ensuite la dernière étape qui consiste à définir vos objectifs et la durée de votre campagne, il faut pour cela indiquer la quantité de maillots, le prix, et Teezilly calculera avec précision les bénéfices futurs.
+    %p Teesily permet une monétisation immédiate de son audience, grâce à la vente personnalisée, les t-shirts permettent de véhiculer le message que le créateur a choisi, par ce biais, les associations sont les principales cibles de la start-up.
+    %p Grâce à sa logistique novatrice et à sa facilité d’accès, Teesily permet une levée de fond participative rapide, que ce soit pour imprimer les couleurs d’un club de sport, pour aider une association ou tout simplement pour un groupe de musique, la création de t-shirt personnalisé répond à un vrai besoin : transformer un engagement individuel en financement collectif !
+    %p L’acteur Stephen Amell qui joue dans la série   »The Arrow »,  a utilisé ce procédé il y a quelques mois pour lutter contre le cancer. Il a ramassé des fonds pour l’association de lutte contre le cancer en mettant son portrait sur le t-shirt avec un message écrit sur un post-it : « F**k Cancer Sincerely captain Amell »
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

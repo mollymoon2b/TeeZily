@@ -1,0 +1,31 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress	
+  .titleArticle
+    %h1 Teezily: il business delle t-shirt conquista l'Europa
+    %p By Martina Podetti, Jun 01, 2015 
+  .article	
+    %p Teezily è una piattaforma online, totalmente gratuita e priva di costi e rischi, che permette a chiunque di concretizzare la propria idea, creando la propria campagna e vendendo t-shirts personalizzate. Tramite un servizio moderno e multilingue, Teezily semplifica l'accesso al mondo dell'e-commerce a chiunque abbia un'idea, una passione, o sia membro di una comunità.
+    %p Se non avete mai esplorato le potenzialità della creazione di una t-shirt, felpa o cappello con il vostro logo o con uno slogan d’impatto, allora dovete ancora conoscere una delle strategie marketing più remunerative e virali: il t-shirt marketing, nato in tempi recenti in contemporanea con l’esponenziale crescita di Facebook e con con lo sviluppo dei suoi principali marketing tool (tra gli altri, la possibilità di indirizzare i propri annunci a comunità estese e interconnesse).
+    %p Solo un anno  fa, nel gennaio 2014, nasceva a Parigi Teezily, la startup che in pochissimo tempo ha rivoluzionato le dinamiche degli eCommerce sfruttando il potere del crowfunding e dei social media per creare e vendere t-shirt online.
+    %p Tre i fattori chiave del successo di Teezily: un design intuitivo, un efficace utilizzo dei social media e gli strumenti marketing messi a disposizione da Facebbok.
+    %p Dotato di una piattaforma online, gratuita e disponibile in diverse lingue,  chiunque con Teezily è in grado di creare e vendere prodotti personalizzati per finanziare una causa oppure semplicemente per creare un business senza costi iniziali di produzione, logistica, spedizione e customer service e soprattutto nessun rischio finanziario.
+    %p I fattori del suo successo? Un design intuitivo, un efficace utilizzo dei social media e gli strumenti marketing messi a disposizione da Facebook.
+    %p Charles Dilasser, co-fondatore & CEO Teezily, racconta:
+    %p “Teezily ha come scopo la rimozione delle barriere così che chiunque possa concretizzare le proprie idee e prendere parte allo sviluppo del commercio online.
+    %p Il punto di forza è la totale assenza di rischi nell’utilizzo della nostra piattaforma, che si presta a rispondere alle esigenze di un gruppo di attori estremamente diversificato: marketers, associazioni, pagine FB, designers.. Nata da un progetto di giovani laureati, Teezily ne mantiene lo spirito: entusiasmo, motivazione e perfezionismo, e la capacità di adattarsi all’inarrestabile evoluzione dei social networks e seguirne le tendenze.”
+    %p.title Come lanciare una campagna Teezily di successo?
+    %p Sei passaggi, intuitivi e immediati permettono di lanciare una campagna di successo: “ricerca” per scoprire le abitudine e le caratteristiche del mercato con l’aiuto del gruppo Facebook Università Teezily, “specifica” la tua nicchia di mercato, controlla che il tuo target di riferimento sia realisticamente raggiungibile, crea il tuo disegno e realizza uno slogan, crea la tua “campagna” e infine crea la tua pubblicità su FB per promuoverla.
+    %p In ogni fase Teezily offre servizi gratuiti per sviluppare al meglio il progetto sia da un punto di vista del progetto grafico che del testo con traduzioni in inglese, francese, portoghese, tedesco, spagnolo e persino greco, polacco, svedese e danese.
+    %p Una volta raggiunto il numero di adesioni minimo a supporto della campagna Teezily produrrà le t-shirt e provvederà a spedirle in tutta Europa. In caso contrario non verrà addebitato nessun costo al cliente.
+    %p Se nel 2014 Teezily ha realizzato e spedito più di 500.000 t-shirt in oltre 30 paesi per il 2015 le aspettative sono ancora più rosee.
+    %p Uno staff sempre più internazionale e poliglotta composto da nuovi assistenti, clienti e business delelopers provenienti da ogni angolo del mondo renderà il servizio di traduzione ancora più efficiente. Inoltre nuovi strumenti che semplificheranno il processo di creazione per i sellers e l’introduzione di nuove features come il programma di affiliazione, l’organizzazione di eventi e training courses permetterà di perfezionare sempre più il servizio, esplorando così nuovi orizzonti.
+
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

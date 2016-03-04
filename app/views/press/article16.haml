@@ -1,0 +1,22 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress	
+  .titleArticle
+    %h1 Teezily, the European Crowdfunding Platform, Expands to Australia and New Zealand
+    %p By Vlad Farcane, Feb 11, 2016
+  .article	
+    %p Sidney, Australia, February 06, 2016 — Teezily has announced its expansion in Australia and New Zealand, showing major growth in the creation of “a fully borderless e-commerce platform,” as Charles Dilasser Co-Founder and CEO says. The fast-growing, European, custom-made, apparel start-up is today making a move to globally expand its footprint through partnerships with local printers in Australia.
+    %p With a highly efficient logistics infrastructure, alongside the extensive internet penetration and smartphone usage, the Teezily team wants to make the most of the fact that the Asia-Pacific state represents one of the most highly developed e-commerce markets. This new service aims to reduce the delivery times and shipping rates, making ordering online from the other side of the world a faster and more exciting experience. Dilasser wants his company’s operations to become flexible enough so that each order is processed by the production facility closest to the recipient, regardless of where the design comes from.
+    %p Orders will be produced and shipped from Australia, ensuring an unparalleled customer experience: the average delivery time will be 5-7 business days, and the European startup will offer highly competitive shipping costs. Therefore, overseas customers will be able to rely on an efficient and multilingual customer support, with a personalised assistance.
+    %p Nonetheless, last November the EU-based start-up launched a new revolutionary, 100% free app called Teezily Plus. Fully aware of the importance to adapt to latest trends in online business, Teezily’s co-founders decided to make it easy for Shopify and Woocomerce users to automatically print and ship T-shirts to their customers. Thus, the aim of Teezily Plus is to enhance brand awareness, giving their users everything they need to set up their own online shop and get their orders printed and delivered worldwide.
+    %p Teezily’s goals and ambitions for 2016 are nothing but remarkable: the Paris-based team is growing day-by-day, with around 50 employees from 15 different countries. Thus, the global expansion was part of the overall strategy for 2015-2016, due to multiple requests from overseas customers. “Motivation and innovation are at the foundation of our business: we have lots of projects in the pipeline for the upcoming year, starting with the Australian expansion and we definitely look forward to targeting even more countries,” says Dilasser.
+    %p Founded in January 2014, the Paris-based start-up harnesses the power of collective crowdfunding by introducing a new and innovative way for individuals, groups and charities to raise money for their causes by selling personalised clothing, thanks to a 100% free and intuitive platform.
+    %p For further information about Teezily, please email angelica@teezily.com
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

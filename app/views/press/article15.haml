@@ -1,0 +1,20 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress	
+  .titleArticle
+    %h1 French t-shirt crowdfunding platform Teezily expands to Australia and New Zealand
+    %p By Ieva Treija,  Feb 8, 2016
+  .article
+    %p Teezily-logoTeezily has just announced its expansion in Australia and New Zealand showing growth in the creation of a fully borderless e-commerce platform. Founded in January 2014, the Paris-based startup introduced a new and free way for individuals, groups and charities to raise money by selling personalised clothing.
+    %p The Teezily team wants to make the most of the fact that the Asia-Pacific state represents one of the most highly developed e-commerce markets with a highly efficient logistics infrastructure, alongside the extensive internet penetration and smartphone usage. This new service aims to reduce the delivery times and shipping rates making ordering online from the other side of the world fast and more exciting experience. Orders will be produced and shipped from Australia. The average delivery time will be 5-7 business days, and the European startup will offer competitive shipping costs.
+    %p Teezily has 50 employees now in the team from 15 different countries. The global expansion is part of the overall strategy for 2015 – 2016, due to multiple requests from overseas customers: “Motivation and innovation are at the foundation of our business: we have lots of projects in the pipeline for the upcoming year, starting with the Australian expansion and we definitely look forward to targeting even more countries,” says Charles Dilasser Co-Founder and CEO. Read our interview with him here.
+    %p EU-Startups.com named Teezily as one of the most promising french startups to pay attention to in year 2015. And here they are – the growth within their two years of existence is remarkable.
+
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();

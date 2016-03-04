@@ -1,0 +1,76 @@
+.about{
+	width: 100%;
+	margin : 0 auto;
+	p {
+		font-size: 17px;
+	}
+
+	h1 {
+		font-weight: 300;
+	}
+
+	.blocIntro, .blocKeyFacts, .blocContact, .blocOffice {
+		padding: 5% 0% 5% 0%;
+		margin : 0 auto;
+		width: 700px;
+		border-bottom: 2px solid $teezilyLightGray;
+	}
+
+	.divTitle {
+		height: 258px;
+		background-image: url("about/fond-media.jpg");
+		background-repeat:no-repeat;
+		background-size: 100% auto;
+		.titleAbout {
+			padding: 5%;
+			h1, p {
+				color: white !important;
+			}
+		}
+	}
+
+	.blocIntro {
+		.titleBloc {
+			font-weight: 400;
+			width: 382px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.blocKeyFacts {
+		height: 600px;
+		.caseKeyFacts {
+			width: 350px;
+			float: left;
+			padding: 20px 0px 0px 0px;
+		}
+	}
+
+	.blocContact {
+		height: 300px;
+		h1 {
+			padding-bottom: 20px;
+		}
+		.adresseMail {
+			.textAdress {
+				padding: 26px;
+			}
+			.adressContact {
+				float: left;
+			}
+			.fa-phone {
+				padding-left:160px;
+			}
+			.blue{
+				color: $blue;
+			}
+		}
+	}
+
+	.blocOffice {
+		img {
+			padding: 20px 20px 0px 0px;
+			width: 348px;
+		}
+	}
+}

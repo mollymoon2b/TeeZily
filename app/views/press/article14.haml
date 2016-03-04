@@ -1,0 +1,25 @@
+.white-bg.landing-page
+  .navbar-wrapper.nav
+    = render 'shared/media_menu'
+
+%section.articlePress	
+  .titleArticle
+    %h1 Teezily for E-Commerce: How to Build Your Own Brand Through the New Teezily Plus App
+    %p Nov 19, 2015
+  .article
+    %p After two years of prolific success, Teezily, the leading European online platform for custom apparel, has decided to go one step further and launch a new revolutionary free app, Teezily Plus.
+    %p Last September, the EU-based start-up, paired with SunFrog, the biggest printing warehouse in the US, to introduce worldwide shipping. Fully aware of the importance to adapt to latest trends in online business, Teezily's co-founders decided to make it easy for Shopify users to automatically print and ship T-shirts to their customers. The aim of Teezily Plus is to enhance physical brand awareness, giving their users everything they need to set up their own online shop and get their orders printed and delivered worldwide; along with tips, mock-ups, translations and a complete fulfilment service.
+    %p The app is 100% free and extremely intuitive: after creating their account, the users will be able to update their designs, publish their T-shirts and develop their own online brand.
+    %p The apps also come with an API for developers. Customers' orders will be automatically fulfilled by Teezily once sales have been reviewed and finalised. Furthermore, competitive prices and fast delivery (around 2-7 business days on average) will guarantee an unparalleled customer experience. Starting with the powerful Shopify, Teezily Plus will progressively integrate all major e-commerce platforms according to users' needs.
+    %p Teezily has already allowed charities to raise funds and designers to sell personalised apparel worldwide with financial success.
+    %p "The brand new app Teezily plus will lead to countless benefits for our users: most importantly, it will allow marketers and designers from all over the world to build unique storefronts. We are looking forward to developing and introducing new tools four our users: this is just the beginning of a real e-commerce revolution!" (Angelica Pratolini, Head of Communication - Teezily)
+    %p Thanks to Teezily + global users will continue to flourish and overcome the final obstacles in this everchanging e-commerce world.
+    %p For further information about the new app, please visit plus.teezily.com or email plus@teezily.com – angelica@teezily.com
+    %p Contact Information: Teezily,  Angelica Pratolini - Head of Communication, +33651052638
+
+  = render 'shared/footer'
+
+  - if Rails.env != 'test'
+    :javascript
+      new WOW().init();
+
